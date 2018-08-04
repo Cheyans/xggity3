@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Question {{ question_id }} diff</title>
+  <style>
+    {{ styles }}
+  </style>
+</head>
+
+<body>
+  <h1>Question {{ question_id }} diff</h1>
+  {% for table in tables %}
+      {{ table }}
+      <br/>
+  {% endfor %}
+</body>
+</html>
